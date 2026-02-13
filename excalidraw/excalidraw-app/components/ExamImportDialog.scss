@@ -1,0 +1,75 @@
+.ExamImportDialog {
+  .ExamImportDialog__body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .ExamImportDialog__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .ExamImportDialog__title {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+
+  .ExamImportDialog__subtitle {
+    margin: 0.25rem 0 0;
+    color: var(--color-text-secondary);
+  }
+
+  .ExamImportDialog__editor {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    background: var(--color-surface-high);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  }
+
+  .ExamImportDialog__editorHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 0.75rem;
+    background: linear-gradient(180deg, #fafafa, #f0f0f0);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  .ExamImportDialog__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    display: inline-block;
+  }
+
+  .ExamImportDialog__dot--red {
+    background: #ff5f56;
+  }
+
+  .ExamImportDialog__dot--yellow {
+    background: #ffbd2e;
+  }
+
+  .ExamImportDialog__dot--green {
+    background: #27c93f;
+  }
+
+  .ExamImportDialog__filename {
+    margin-left: 0.5rem;
+    font-size: 0.85rem;
+    color: #6b6b6b;
+  }
+
+  .ExamImportDialog__input {
+    padding: 1rem 1.25rem 1.25rem;
+  }
+
+  .ExamImportDialog__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+  }
+}

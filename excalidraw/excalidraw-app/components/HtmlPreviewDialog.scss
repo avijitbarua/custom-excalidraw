@@ -1,0 +1,97 @@
+.HtmlPreviewDialog {
+  .HtmlPreviewDialog__body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .HtmlPreviewDialog__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .HtmlPreviewDialog__title {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+
+  .HtmlPreviewDialog__subtitle {
+    margin: 0.25rem 0 0;
+    color: var(--color-text-secondary);
+  }
+
+  .HtmlPreviewDialog__editor {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    background: var(--color-surface-high);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  }
+
+  .HtmlPreviewDialog__editorHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 0.75rem;
+    background: linear-gradient(180deg, #fafafa, #f0f0f0);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  .HtmlPreviewDialog__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    display: inline-block;
+  }
+
+  .HtmlPreviewDialog__dot--red {
+    background: #ff5f56;
+  }
+
+  .HtmlPreviewDialog__dot--yellow {
+    background: #ffbd2e;
+  }
+
+  .HtmlPreviewDialog__dot--green {
+    background: #27c93f;
+  }
+
+  .HtmlPreviewDialog__filename {
+    margin-left: 0.5rem;
+    font-size: 0.85rem;
+    color: #6b6b6b;
+  }
+
+  .HtmlPreviewDialog__textarea {
+    width: 100%;
+    min-height: 380px;
+    padding: 1rem 1.25rem;
+    border: none;
+    resize: vertical;
+    font-family: "Fira Code", "JetBrains Mono", "SFMono-Regular", Consolas,
+      "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--color-text-primary);
+    background-image: linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent calc(1.6em - 1px),
+      rgba(0, 0, 0, 0.05) calc(1.6em - 1px),
+      rgba(0, 0, 0, 0.05) 1.6em
+    );
+    background-size: 100% 1.6em;
+    background-attachment: local;
+  }
+
+  .HtmlPreviewDialog__textarea:focus {
+    outline: none;
+  }
+
+  .HtmlPreviewDialog__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+  }
+}
